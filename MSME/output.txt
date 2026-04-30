@@ -1,0 +1,65 @@
+=======================================================
+  ARTH-VIGYAN ANALYSIS ENGINE
+=======================================================
+
+  FILE : arth_vigyan_sample_dataset.csv
+
+  [✓] Loaded! Auto-selected 'Avg_Annual_Turnover_Lakhs' as analysis target. Features engineered successfully.
+
+  TRAINING ML MODELS
+  ----------------------------------------
+  [✓] Models Trained! Best: Random Forest (Acc: 100.0%, F1: 1.00)
+
+  DISTRICT/ENTITY          RISK        SCORE  SEGMENT
+  -------------------------------------------------------
+  Agra                     High          15/100  Emerging
+  Aligarh                  High          18/100  Stable
+  Allahabad                Medium        38/100  Stable
+  Ambedkar Nagar           Low           70/100  Emerging
+  Amroha                   Medium        42/100  Emerging
+  Auraiya                  Medium        37/100  Stable
+  Azamgarh                 Low           85/100  Stable
+  Baghpat                  Low           84/100  Emerging
+  Bahraich                 Low           96/100  Declining
+  Ballia                   High           6/100  Emerging
+  Balrampur                Medium        54/100  Declining
+  Banda                    High          24/100  Stable
+  Barabanki                High          32/100  Stable
+  Bareilly                 High           6/100  Stable
+  Basti                    Low           70/100  Stable
+  Bhadohi                  Low           76/100  Stable
+  Bijnor                   High           0/100  Stable
+  Budaun                   High          12/100  Stable
+  Bulandshahr              High          24/100  Declining
+  Chandauli                Low           95/100  Stable
+  Chitrakoot               High           0/100  Stable
+  Deoria                   High           5/100  Stable
+  Etah                     Low           81/100  Stable
+  Etawah                   High          33/100  Stable
+  Faizabad                 Medium        45/100  Emerging
+  Farrukhabad              Low           78/100  Stable
+  Fatehpur                 High          12/100  Stable
+  Firozabad                Low           82/100  Declining
+  Gautam Buddha Nagar      Low           81/100  Emerging
+  Ghaziabad                Low           81/100  Declining
+
+
+MODEL PERFORMANCE METRICS
+=============================================
+  Random Forest          Acc: 100.0%  F1: 1.00 ◀ BEST
+  Logistic Regression    Acc: 96.0%  F1: 0.96
+
+TOP FEATURE IMPORTANCES (Random Forest)
+---------------------------------------------
+  Avg_Annual_Turnover_La 0.402 ████████████████
+  Digital_Txn_Score      0.069 ██
+  Growth_Rate            0.055 ██
+  Infrastructure_Index   0.041 █
+  Loan_Default_Rate_Pct  0.040 █
+  Internet_Penetration_P 0.037 █
+  Utility_Bill_Complianc 0.036 █
+  Employment_Generated   0.036 █
+
+  >>> SAVING REPORT TO MONGODB …
+  [✓] Successfully saved 50 analyzed records to MongoDB!
+
